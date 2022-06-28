@@ -26,6 +26,7 @@
 		6D7A90C427DE593200209C06 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7A90C327DE593200209C06 /* Title.swift */; };
 		6DC849B9284D2DEC002C55C5 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC849B8284D2DEC002C55C5 /* TitleTableViewCell.swift */; };
 		6DC849BB284D32B1002C55C5 /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC849BA284D32B1002C55C5 /* TitleViewModel.swift */; };
+		D64A079C286B3F5700FD8637 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A079B286B3F5700FD8637 /* SearchResultsViewController.swift */; };
 		D6C444432865F52D00AB2A44 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = D6C444422865F52D00AB2A44 /* SDWebImage */; };
 		D6C444452865F52D00AB2A44 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D6C444442865F52D00AB2A44 /* SDWebImageMapKit */; };
 /* End PBXBuildFile section */
@@ -50,6 +51,7 @@
 		6D7A90C327DE593200209C06 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		6DC849B8284D2DEC002C55C5 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		6DC849BA284D32B1002C55C5 /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
+		D64A079B286B3F5700FD8637 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +96,6 @@
 				6D7A90AF27DCFD6E00209C06 /* Controllers */,
 				6D7A909B27DCFAF800209C06 /* AppDelegate.swift */,
 				6D7A909D27DCFAF800209C06 /* SceneDelegate.swift */,
-				6D7A909F27DCFAF800209C06 /* MainTabBarViewController.swift */,
 				6D7A90A427DCFAF900209C06 /* Assets.xcassets */,
 				6D7A90A627DCFAF900209C06 /* LaunchScreen.storyboard */,
 				6D7A90A927DCFAF900209C06 /* Info.plist */,
@@ -105,10 +106,8 @@
 		6D7A90AF27DCFD6E00209C06 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				6D7A90B027DCFDCB00209C06 /* HomeViewController.swift */,
-				6D7A90B227DCFDFE00209C06 /* UpcomingViewController.swift */,
-				6D7A90B427DCFE1C00209C06 /* SearchViewController.swift */,
-				6D7A90B627DCFE4100209C06 /* DownloadsViewController.swift */,
+				D64A079E286B3FDC00FD8637 /* General */,
+				D64A079D286B3F9500FD8637 /* Core */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -154,6 +153,26 @@
 				6D7A90C127DE54BD00209C06 /* APICaller.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		D64A079D286B3F9500FD8637 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6D7A90B227DCFDFE00209C06 /* UpcomingViewController.swift */,
+				6D7A90B027DCFDCB00209C06 /* HomeViewController.swift */,
+				6D7A90B427DCFE1C00209C06 /* SearchViewController.swift */,
+				6D7A909F27DCFAF800209C06 /* MainTabBarViewController.swift */,
+				6D7A90B627DCFE4100209C06 /* DownloadsViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D64A079E286B3FDC00FD8637 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				D64A079B286B3F5700FD8637 /* SearchResultsViewController.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +264,7 @@
 				6D7A90C027DD36E800209C06 /* HeroHeaderUIView.swift in Sources */,
 				6D7A90B727DCFE4100209C06 /* DownloadsViewController.swift in Sources */,
 				6D7A909C27DCFAF800209C06 /* AppDelegate.swift in Sources */,
+				D64A079C286B3F5700FD8637 /* SearchResultsViewController.swift in Sources */,
 				6D40183927DFCA7C00FFA92D /* Extensions.swift in Sources */,
 				6D7A909E27DCFAF800209C06 /* SceneDelegate.swift in Sources */,
 				6D7A90B327DCFDFE00209C06 /* UpcomingViewController.swift in Sources */,
@@ -391,7 +411,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = TLX2TM4P58;
+				DEVELOPMENT_TEAM = M996PDY9L4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Movie Trailers/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -418,7 +438,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = TLX2TM4P58;
+				DEVELOPMENT_TEAM = M996PDY9L4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Movie Trailers/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
