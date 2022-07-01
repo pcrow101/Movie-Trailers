@@ -14,9 +14,7 @@ class TitlePreviewViewController: UIViewController {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = .systemFont(ofSize: 22, weight: .bold)
-
         label.text = "Harry Potter"
-
         return label
     }()
 
@@ -53,7 +51,6 @@ class TitlePreviewViewController: UIViewController {
         view.addSubview(titleLabel)
         view.addSubview(overviewLabel)
         view.addSubview(downloadButton)
-
         configureConstraints()
     }
 
@@ -91,9 +88,7 @@ class TitlePreviewViewController: UIViewController {
     func configure(with model: TitlePreviewViewModel) {
         titleLabel.text = model.title
         overviewLabel.text = model.titleOvervew
-
-        guard let url = URL(string: "https://www.youtube.com/embed/\(model.youtubeVideo)") else {return}
-
+        guard let url = URL(string: "https://www.youtube.com/embed/\(model.youtubeVideo.id.videoId)") else {return}
         webView.load(URLRequest(url: url))
     }
 }

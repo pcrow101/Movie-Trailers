@@ -39,7 +39,6 @@ class TitleTableViewCell: UITableViewCell {
         contentView.addSubview(titlesPosterUIImageView)
         contentView.addSubview(titleLabel)
         contentView.addSubview(playTitleButton)
-
         applyConstraints()
     }
     
@@ -54,15 +53,13 @@ class TitleTableViewCell: UITableViewCell {
         let titleLabelConstraints = [
             titleLabel.leadingAnchor.constraint(equalTo: titlesPosterUIImageView.trailingAnchor, constant: 20),
             titleLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
-            
         ]
         
         let playTitleButtonConstraints = [
             playTitleButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
             playTitleButton.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
         ]
-        
-        
+
         NSLayoutConstraint.activate(titlesPosterUIImageViewConstraints)
         NSLayoutConstraint.activate(titleLabelConstraints)
         NSLayoutConstraint.activate(playTitleButtonConstraints)
@@ -73,7 +70,7 @@ class TitleTableViewCell: UITableViewCell {
         guard let url = URL(string: "https://image.tmdb.org/t/p/w500/\(model.posterURL)") else {
             return
         }
-        
+
         titlesPosterUIImageView.sd_setImage(with: url, completed: nil)
         titleLabel.text = model.titleName
     }
@@ -82,5 +79,4 @@ class TitleTableViewCell: UITableViewCell {
     required init?(coder: NSCoder) {
         fatalError()
     }
-
 }

@@ -11,5 +11,4 @@ struct TitlePreviewViewModel {
     let title: String
     let youtubeVideo: VideoElement
     let titleOvervew: String
-    
 }
